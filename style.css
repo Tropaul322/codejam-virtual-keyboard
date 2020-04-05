@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+body{
+    background: rgb(238,174,202);
+    background: linear-gradient(221deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.keyboard{
+    position: fixed;
+    margin: 0 auto;
+    bottom: 13%;
+    left: 16%;
+    width: 1032px;
+    height: 316px;
+    border: solid 5px #360570;
+    border-radius: 15px;
+    padding: 5px 0;
+    background:rgba(255, 255, 255, 0.5); 
+    user-select: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.keyboard_keys{
+    text-align: center;
+    margin: 0 auto;
+    width: 1263px;
+    margin-left: -119px;    
+    margin-top: 27px;   
+
+}   
+.keyboard_keys2{    
+    text-align: center; 
+    margin: 0 auto;
+}
+.keyboard_key{
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    height: 45px;
+    width: 4%;
+    min-width: 20px;    
+    max-width: 150px;
+    margin: 3px;
+    border-radius: 4px;
+    border: solid 1px gray;
+    background: azure;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    position: relative;
+    font-size: 1.05rem;
+}
+.keyboard_key:hover{
+    font-size: 1.3rem;
+    border: solid 2px #6B8FD4;
+}
+.keyboard_key:active{
+    background: antiquewhite;
+    border: solid 2px #6B8FD4;
+    font-size: 1rem;
+}
+.keyboard_key-wide{
+    width: 8%;
+}
+.keyboard_key-extra-wide{
+    width: 22%;
+    max-width: 500px;
+}
+.keyboard_key-activatable::after{
+    content: '';
+    top: 6px;
+    right: 8px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%  ;
+
+}
+.keyboard_key-active::after{
+    background: #08ff00
+}
+.keyboard_key-dark{
+    background: antiquewhite;
+    border: solid 2px #6B8FD4;
+    font-size: 1rem;
+}
+.textarea{
+    position: absolute;
+    width: 50%;
+    height: 35%;
+    left: 24%;
+    color: #fff;
+    font-family: 'Comic Neue', cursive;
+    padding-top: 8px;
+    padding-left: 12px;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+    background-color: rgba(56, 126, 209, 0.60);
+    border-radius: 20px
+} 
+.textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5); 
+} 
+.description{
+    position: absolute;
+    bottom: 50px;
+    left: 20%;
+    width: 58%;
+   height: 5%;
+   text-align: center;
+   font-family: 'Comic Neue', cursive;
+   font-size: 25px;
+}

@@ -213,7 +213,7 @@ const Keyboard = {
         this.open(key.value, (currentValue) => {
           key.value = currentValue;
         });
-        if (key.innerHTML.toLowerCase() === keyCodes[keyKode].toLowerCase()) {
+        if (key.innerHTML.toLowerCase() === keyCodes[keyKode]) {
           key.classList.add('keyboard_key-dark');
           if (key.innerHTML === 'CapsLock') {
             this.toggleCapsLock();
@@ -250,7 +250,7 @@ const Keyboard = {
       let shift = false;
       this.myFocusFunction();
       keyboardKeys.forEach((key) => {
-        if (key.innerHTML.toLowerCase() === keyCodes[keyKode].toLowerCase()) {
+        if (key.innerHTML.toLowerCase() === keyCodes[keyKode]) {
           key.classList.remove('keyboard_key-dark');
 
           if (key.innerHTML === 'ShiftL' || key.innerHTML === 'ShiftR') {
